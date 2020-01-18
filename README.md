@@ -1,2 +1,2 @@
 # Final-Project-Lonely-Cells
-The final project (Lonely Cells)
+This is final project for first term of bachelor
