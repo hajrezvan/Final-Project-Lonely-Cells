@@ -1,13 +1,15 @@
 #ifndef FINAL_PROJECT_MENUS_H
 #define FINAL_PROJECT_MENUS_H
 
+int map_x,map_y;
+
 //First Menu
 void start_menu(void);
 
 //Start Game
 void load_menu(void);
-void new_single_playerl_game_menu(void);
-void new_multiplayer_game_menu(void);
+void new_single_player_game_menu(void);
+void new_multi_player_game_menu(void);
 void exit_from_game_menu(void);
 
 //New game
