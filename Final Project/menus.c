@@ -1,10 +1,12 @@
-#include "menus.h"
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
 
+#include "menus.h"
+#include "cells.h"
+
 //visible for all of function
-int map_x,map_y;
+
 
 //First Menu:
 void start_menu(void){
@@ -26,11 +28,13 @@ void start_menu(void){
             break;
         }
         case 2:{
+            new_list();
             new_single_player_game_menu();
             system("cls");
             break;
         }
         case 3:{
+            new_list();
             new_multi_player_game_menu();
             system("cls");
             break;
@@ -53,11 +57,14 @@ void load_menu(void){
 void new_single_player_game_menu(void){
     system("cls");
     number_of_cells_menu();
+    cells_new(100,0,0);
 }
 
 void new_multi_player_game_menu(void){
     system("cls");
     number_of_cells_menu();
+    cells_new(100,0,0);
+    cells_new(100,map_x,map_y);
 }
 
 void exit_from_game_menu(void){
